@@ -1,0 +1,55 @@
+#summary README before running EzSmugDel
+
+*Now, EzSmugUP supports Win32 platforms!!!*
+
+For those who don't want to manually install Perl packages, standalone executable binary code is provided in the download page.
+
+Please download both the binary file and "setting.cnf". Put the two file in the same directory to run.
+
+EzSmugUP is a Perl script. It depends on several perl packages.
+
+Here is the list of packages you should install before running EzSmugUP:
+
+Perl packages required:
+
+   WWW::SmugMug::API
+
+   File::Slurp
+
+   File::List
+
+   LWP
+
+   XML::Simple
+
+   Data::Dumper
+
+   Encode
+
+   Digest::MD5
+
+Also, since EzSmugUP uses HTTPS to send request you should install related packages for SSL (such as Crypt::SSLeay)
+
+How to run this script:
+
+ A. Right click the download link of the  download page , choose "Save Target As" then save the two files (esuxxx_xxx.pl and setting.cnf) to your local disk.
+ B. Change the permission of the script to be executable (only for Unix version):
+
+    chmod 755 esuxxx_xxx.pl
+ 
+ C. Edit "setting.cnf" and find the "EmailAddress" and "Password" in the file. Fill in your SmugMug account and password. Save and exit. For example,
+
+    EmailAddress => ezsmugup@ezsmugup.com
+    Password => IloveSmugMug
+
+   No SmugMug account? Sign up here for free!
+
+ D. Now you can run EzSmugUP. Remember to add the upload path as the argument. For example,
+ 
+    (Unix) ./esuunix_xxx.pl /home/smugmug/upload/
+
+    (Windows)  esuwin32_xxx "d:\My Documents\Pictures"
+ 
+ E. Enjoy it!!!! 
+
+Please leave a comment here if this list should be revised. Thanks!!

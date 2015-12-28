@@ -1,0 +1,23 @@
+#summary EzSmugUP usage notice
+
+To run EzSmugUP:
+
+1. Organize or place your photos in your directory.
+
+    The directory structure should be
+
+         /xx/xxx/xxx/upload/category_name/subcategory_name/album_name/
+
+         OR
+
+         /xx/xxx/xxx/upload/category_name/album_name/
+
+    `*` SubCategory is optional
+
+2. Run the EzSmupUP uploader.
+
+    EzSmugUP /xx/xxx/xxx/upload/
+
+3. Wait for the completion!
+
+Please note that the names of category and subcategory should only contain alphnumeric plus space and dash characters. EzSmugUP will not warn you if the name is not acceptable (maybe someday will). Using incorrect category name will cause upload fail.

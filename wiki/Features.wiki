@@ -1,0 +1,40 @@
+#summary Features and Roadmap
+#labels Featured
+
+==*Features:*==
+
+*EzSmugUP:*
+
+1. Automatically create new Categories, SubCategories, Albums and upload photos in them.
+
+2. Skip the photos that are already uploaded.
+
+3. Verify every uploaded photo.
+
+4. One-way sync. You can add EzSmugUP in your crontab to run periodically. EzSmugUP will automatically upload your newly add photos in the monitored directory. (EzSmugUP won't delete photos either in local disk or online album. It's a ONE-WAY synchronization uploader.)
+
+5. SmugMug sometimes will modify your original photos (metadata, orientation, better quality). So EzSmugUP checks file name and photo original create date  when doing the one-way syncing.
+
+ 
+
+*EzSmugDel:*
+
+1. Delete an entire category.
+
+2. Delete an specific subcategory.
+
+3. Delete multiple albums under a category/subcategory.
+
+ 
+
+==*Road Map:*==
+
+1. Use configuration file to set up categories/subcategories/album settings.
+
+2. Supports Windows. (Done!!)
+
+3. Another useful SmugMug tools (ex. delete whole categories, subcategories). (Done!!)
+
+4. Two-way synchronization. (EzSmugSync)
+
+Please drop your comment for more features. 

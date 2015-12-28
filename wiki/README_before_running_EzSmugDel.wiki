@@ -1,0 +1,71 @@
+#summary README before running EzSmugDel
+
+Now, EzSmugDel supports Win32 platforms!!! 
+
+ 
+For those who don't want to manually install Perl packages, standalone executable binary code is provided in the download page.
+
+Please download both the binary file and "setting.cnf". Put the two file in the same directory to run.
+
+EzSmugDel is a Perl script. It depends on several perl packages.
+Here is the list of packages you should install before running EzSmugDel:
+
+Perl packages required: 
+
+ WWW::SmugMug::API
+
+ LWP
+
+ Data::Dumper
+
+ Encode
+
+Also, since EzSmugDel uses HTTPS to send request you should install related packages for SSL (such as Crypt::SSLeay)
+
+How to run this script:
+
+1. Right click the download link of the  download page , choose "Save Target As" then save the two files (esdxxx_xxx.pl and setting.cnf) to your local disk.
+ 
+2. Change the permission of the script to be executable (only for Unix version):
+ 
+    chmod 755 esdxxx_xxx.pl
+ 
+3. Edit "setting.cnf" and find the "EmailAddress" and "Password" in the file. Fill in your SmugMug account and password. Save and exit. For example,
+
+    EmailAddress => ezsmugup@ezsmugup.com
+
+    Password => IloveSmugMug
+
+    No SmugMug account? Sign up here for free!
+
+4. Now you can run EzSmugDel. Remember to add category/subcategory/album names as the argument. For example,
+ 
+    A. Delete entire category
+
+       (Unix) ./esdunix_xxx.pl "My Category"
+
+    (Unix binary) ./esdunix_xxx "My Category" 
+
+    (Windows)  esdwin32_xxx "My Category"
+
+    B. Delete entire subcategory
+
+    (Unix) ./esdunix_xxx.pl "My Category" "My SubCategory"
+
+    (Unix binary) ./esdunix_xxx "My Category" "My SubCategory"
+
+    (Windows) esdwin32_xxx "My Category" "My SubCategory"
+
+    C. Delete multiple albums ( in the same category/subcategory tree )
+
+    (Unix) ./esdunix_xxx.pl "Category" "SubCategory" "Album1" "Album2" "Album3" ......
+
+    (Unix binary) ./esdunix_xxx "Category" "SubCategory" "Album1" "Album2" "Album3" ......
+
+    (Windows) esdwin32_xxx "Category" "SubCategory" "Album1" "Album2" "Album3" ......
+
+
+ 
+5. Enjoy it!!!! 
+
+Please leave a comment here if this list should be revised. Thanks!! 

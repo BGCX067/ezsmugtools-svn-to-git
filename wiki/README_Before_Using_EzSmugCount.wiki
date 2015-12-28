@@ -1,0 +1,11 @@
+#summary README before using EzSmugCount
+
+Right now EzSmugCount does not have many functions. So I decide to release only source code rather than binary.
+
+
+If you want to use it, please edit the account name  and password in the source Perl script first. It is run without any argument. The number of total images uploaded to the online SmugMug galleries will be shown.
+
+For example,
+
+D:\Perl>perl esc.pl
+total images = 123435 
